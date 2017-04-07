@@ -1,0 +1,11 @@
+Package: grx-dbus
+Priority: required
+Section: grx
+Maintainer: Diputación Provincial de Granada, Oficina de Software Libre <osl@dipgra.es>
+Architecture: amd64
+Version: 2017.06.04
+Depends: python-dbus,nmcli
+Conflicts: 
+Provides: 
+Homepage: https://incidencias.dipgra.es/
+Description: Paquete con la arquitectura dbus necesaria para la distro GrXv2 de la Diputacion de Granada

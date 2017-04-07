@@ -1,0 +1,14 @@
+[Unit]
+Description = Grx arp demonio
+After network.target = auditd.service
+
+[Service]
+Type = dbus
+BusName=grx.arp
+ExecStart=/usr/local/bin/grx-arp.sh start 
+ExecStop=/usr/local/bin/grx-arp.sh stop
+ExecReload=/usr/local/bin/grx-arp.sh reload
+
+[Install]
+WantedBy = multi-user.target
+

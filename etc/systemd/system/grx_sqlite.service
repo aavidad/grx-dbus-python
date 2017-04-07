@@ -1,0 +1,14 @@
+[Unit]
+Description = Grx Sqlite demonio
+After network.target = auditd.service
+
+[Service]
+Type = dbus
+BusName=grx.sqlite
+ExecStart=/usr/local/bin/grx-sqlite.sh start 
+ExecStop=/usr/local/bin/grx-sqlite.sh stop
+ExecReload=/usr/local/bin/grx-sqlite.sh reload
+
+[Install]
+WantedBy = multi-user.target
+
